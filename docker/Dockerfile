@@ -25,49 +25,30 @@ RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
 
 ENV LANG=en_US.UTF-8
 
+RUN apt-get update && apt -y install apt-utils
+
 # Install common tools
 # deps in https://github.com/o3de/o3de/blob/development/scripts/build/build_node/Platform/Linux/package-list.ubuntu-jammy.txt
 RUN apt-get update && apt-get install -y \
-    bc \
-    bind9-utils \
-    binutils \
-    ca-certificates \
     clang \
-    cmake \
-    file \
-    firewalld \
-    git \
-    git-lfs \
-    jq \
-    kbd \
-    kmod \
-    less \
-    lsb-release \
+    ninja-build \
     libglu1-mesa-dev \
     libxcb-xinerama0 \
+    libxcb-xinput0 \
     libfontconfig1-dev \
     libcurl4-openssl-dev \
-    libnvidia-gl-470 \
+    libpcre2-16-0 \
     libssl-dev \
     libxcb-xkb-dev \
     libxkbcommon-x11-dev \
     libxkbcommon-dev \
     libxcb-xfixes0-dev \
     libxcb-xinput-dev \
-    libxcb-xinput0 \
-    libpcre2-16-0 \
-    lsof \
-    net-tools \
-    ninja-build \
-    pciutils \
-    python3-pip \
-    software-properties-common \
-    sudo \
-    tar \
-    unzip \
-    vim \
-    wget \
-    xz-utils \
+    zlib1g-dev \
+    mesa-common-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y git git-lfs \
     && rm -rf /var/lib/apt/lists/*
 
 # Gem + ROSConDemo ROS pacakges
@@ -136,7 +117,12 @@ RUN apt-get update && apt-get install -y \
     ros-humble-topic-tools \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install python-statemachine
+RUN apt-get update && apt-get install -y python3-pip  \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install python-statemachine
+
+RUN apt-get update && apt-get install -y libnvidia-gl-470 \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR $WORKDIR
 
