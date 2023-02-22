@@ -21,9 +21,9 @@ def generate_launch_description():
     return LaunchDescription([
         declare_namespace_cmd,
         Node(
-            package='o3de_kraken_nav',
-            executable='joy_to_ackermann',
-            name='joy_to_ackermann',
+            package='teleop_twist_joy',
+            executable='teleop_node',
+            name='joy_to_cmd',
             namespace=namespace
         ),
         Node(

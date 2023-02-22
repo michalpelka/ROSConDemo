@@ -18,7 +18,8 @@
     ],
     "restricted": "ROSConDemo",
     "gem_names": [
-        "ROS2"
+        "ROS2",
+        "RGL"
     ],
     "engine_version": "1.0.0"
 }

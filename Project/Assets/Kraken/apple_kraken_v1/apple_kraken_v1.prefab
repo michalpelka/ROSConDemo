@@ -7,7 +7,6 @@
                 "$type": "EditorEntitySortComponent",
                 "Id": 12694914810967694506,
                 "Child Entity Order": [
-                    "Entity_[453802196716717]",
                     "Entity_[126373983206044]"
                 ]
             },
@@ -25,8 +24,8 @@
                 "Parent Entity": "",
                 "Transform Data": {
                     "Translate": [
-                        -64.3432846069336,
-                        43.738372802734375,
+                        -10.332221984863281,
+                        -1.9468011856079102,
                         0.3443603515625
                     ],
                     "Rotate": [
@@ -2695,6 +2694,7 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 17916227991713293347,
                     "Child Entity Order": [
+                        "Entity_[453802196716717]",
                         "Entity_[126352508369564]",
                         "Entity_[126335328500380]",
                         "Entity_[126378278173340]",
@@ -2708,9 +2708,9 @@
                         "Entity_[5494828217205]",
                         "Entity_[36172097579699]",
                         "Entity_[453828565735265]",
-                        "Instance_[16621539659898]/ContainerEntity",
-                        "Instance_[15809790840954]/ContainerEntity",
-                        "Instance_[16591474888826]/ContainerEntity"
+                        "Entity_[23461577835793]",
+                        "Entity_[23431513064721]",
+                        "Entity_[4533389452501]"
                     ]
                 },
                 "Component_[3226220641517151136]": {
@@ -3466,25 +3466,368 @@
                 }
             }
         },
-        "Entity_[30555890626372]": {
-            "Id": "Entity_[30555890626372]",
-            "Name": "LidarKraken",
+        "Entity_[23431513064721]": {
+            "Id": "Entity_[23431513064721]",
+            "Name": "Apple_Crate_empty",
             "Components": {
-                "Component_[10387713135725007135]": {
+                "Component_[13219244507659109505]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 13219244507659109505,
+                    "Child Entity Order": [
+                        "Entity_[23435808032017]"
+                    ]
+                },
+                "Component_[14744176274437433019]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14744176274437433019,
+                    "Parent Entity": "Entity_[126373983206044]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.5687007904052734,
+                            0.000003814697265625,
+                            0.6364383697509766
+                        ],
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            90.00000762939453
+                        ]
+                    }
+                },
+                "Component_[15997853056622150220]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 15997853056622150220
+                },
+                "Component_[16260322733702707360]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16260322733702707360
+                },
+                "Component_[16370124873718181668]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16370124873718181668
+                },
+                "Component_[275298596182513649]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 275298596182513649
+                },
+                "Component_[3742981526396069698]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 3742981526396069698
+                },
+                "Component_[5052183535419524745]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5052183535419524745
+                },
+                "Component_[9499472053985704658]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 9499472053985704658
+                }
+            }
+        },
+        "Entity_[23435808032017]": {
+            "Id": "Entity_[23435808032017]",
+            "Name": "Apple_Crate",
+            "Components": {
+                "Component_[11032823860518593082]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 11032823860518593082
+                },
+                "Component_[14063829758759983448]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14063829758759983448,
+                    "Parent Entity": "Entity_[23431513064721]",
+                    "IsStatic": true
+                },
+                "Component_[16325347661556016829]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16325347661556016829,
+                    "DisabledComponents": [
+                        {
+                            "$type": "EditorColliderComponent",
+                            "Id": 6131507114438886105,
+                            "ColliderConfiguration": {
+                                "MaterialSlots": {
+                                    "Slots": [
+                                        {
+                                            "Name": "DefaultMaterial"
+                                        }
+                                    ]
+                                }
+                            },
+                            "ShapeConfiguration": {
+                                "PhysicsAsset": {
+                                    "Asset": {
+                                        "assetId": {
+                                            "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                            "subId": 1435810015
+                                        },
+                                        "assetHint": "assets/apple_crate/apple_crate.pxmesh"
+                                    },
+                                    "Configuration": {
+                                        "PhysicsAsset": {
+                                            "assetId": {
+                                                "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                                "subId": 1435810015
+                                            },
+                                            "loadBehavior": "QueueLoad",
+                                            "assetHint": "assets/apple_crate/apple_crate.pxmesh"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Component_[16860679445705058947]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 16860679445705058947
+                },
+                "Component_[1699735674964201617]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 1699735674964201617
+                },
+                "Component_[17515991116920437105]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 17515991116920437105
+                },
+                "Component_[6965830782696864825]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 6965830782696864825
+                },
+                "Component_[8205517628188817334]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 8205517628188817334,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1574106304
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{2547663B-752C-5C7A-BF44-7288D95A7B21}"
+                                            },
+                                            "assetHint": "assets/apple_crate/apple_crate_cratemat.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Component_[8819040866776028521]": {
                     "$type": "AZ::Render::EditorMeshComponent",
-                    "Id": 10387713135725007135,
+                    "Id": 8819040866776028521,
                     "Controller": {
                         "Configuration": {
                             "ModelAsset": {
                                 "assetId": {
-                                    "guid": "{99D850A3-8E59-5E78-93FE-AE8DB228684D}",
-                                    "subId": 268955557
+                                    "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                    "subId": 270483317
                                 },
-                                "assetHint": "models/sensors/lidaros2/lidaros2.azmodel"
-                            }
+                                "assetHint": "assets/apple_crate/apple_crate.azmodel"
+                            },
+                            "IsRayTracingEnabled": false
                         }
                     }
                 },
+                "Component_[9008534885754287450]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 9008534885754287450,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 14063829758759983448
+                        },
+                        {
+                            "ComponentId": 8819040866776028521,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 8205517628188817334,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 6131507114438886105,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[9070077239474304225]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 9070077239474304225
+                }
+            }
+        },
+        "Entity_[23461577835793]": {
+            "Id": "Entity_[23461577835793]",
+            "Name": "Apple_Crate",
+            "Components": {
+                "Component_[10319944021297111684]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 10319944021297111684
+                },
+                "Component_[12002651572696332522]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 12002651572696332522
+                },
+                "Component_[13029979492766395855]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 13029979492766395855,
+                    "Child Entity Order": [
+                        "Entity_[23470167770385]"
+                    ]
+                },
+                "Component_[13953645658955709765]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 13953645658955709765,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                    "subId": 270483317
+                                },
+                                "assetHint": "assets/apple_crate/apple_crate.azmodel"
+                            },
+                            "IsRayTracingEnabled": false
+                        }
+                    }
+                },
+                "Component_[14710467565401484989]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 14710467565401484989
+                },
+                "Component_[15224001494745498459]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 15224001494745498459,
+                    "Parent Entity": "Entity_[126373983206044]",
+                    "Transform Data": {
+                        "Translate": [
+                            -0.2532958984375,
+                            0.000003814697265625,
+                            0.635009765625
+                        ],
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            90.00000762939453
+                        ]
+                    }
+                },
+                "Component_[15578611361121469530]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 15578611361121469530
+                },
+                "Component_[4018777637315211517]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 4018777637315211517
+                },
+                "Component_[581434203503420181]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 581434203503420181
+                },
+                "Component_[7076366510474746320]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 7076366510474746320
+                }
+            }
+        },
+        "Entity_[23470167770385]": {
+            "Id": "Entity_[23470167770385]",
+            "Name": "Apples",
+            "Components": {
+                "Component_[12323307880868596825]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 12323307880868596825,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{4C3ABE52-2FFB-568A-A929-5C03FCE82523}",
+                                    "subId": 281849903
+                                },
+                                "assetHint": "assets/apple_crate/apples.azmodel"
+                            },
+                            "IsRayTracingEnabled": false
+                        }
+                    }
+                },
+                "Component_[14657094464998808317]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 14657094464998808317
+                },
+                "Component_[15614483012682780230]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 15614483012682780230
+                },
+                "Component_[1829810337210230213]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 1829810337210230213
+                },
+                "Component_[2599595645907859440]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 2599595645907859440
+                },
+                "Component_[2602067516557266413]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 2602067516557266413,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1676432290
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{8374CF8D-27C3-5B5B-AC6A-2B6CCB79C956}"
+                                            },
+                                            "assetHint": "assets/apple_crate/apples_applemat.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Component_[2757178427517368518]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 2757178427517368518
+                },
+                "Component_[2844246515640413479]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 2844246515640413479
+                },
+                "Component_[3815322363885625376]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 3815322363885625376
+                },
+                "Component_[6930457845299929764]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 6930457845299929764
+                },
+                "Component_[7961709360424597703]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 7961709360424597703,
+                    "Parent Entity": "Entity_[23461577835793]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.009002208709716797,
+                            0.0,
+                            -0.07135659456253052
+                        ]
+                    },
+                    "IsStatic": true
+                }
+            }
+        },
+        "Entity_[30555890626372]": {
+            "Id": "Entity_[30555890626372]",
+            "Name": "LidarKraken",
+            "Components": {
                 "Component_[11659553095730431803]": {
                     "$type": "EditorPendingCompositionComponent",
                     "Id": 11659553095730431803
@@ -3535,7 +3878,24 @@
                 },
                 "Component_[17075071070477116796]": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 17075071070477116796
+                    "Id": 17075071070477116796,
+                    "DisabledComponents": [
+                        {
+                            "$type": "AZ::Render::EditorMeshComponent",
+                            "Id": 10387713135725007135,
+                            "Controller": {
+                                "Configuration": {
+                                    "ModelAsset": {
+                                        "assetId": {
+                                            "guid": "{99D850A3-8E59-5E78-93FE-AE8DB228684D}",
+                                            "subId": 268955557
+                                        },
+                                        "assetHint": "models/sensors/lidaros2/lidaros2.azmodel"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 },
                 "Component_[18376511454985353613]": {
                     "$type": "GenericComponentWrapper",
@@ -3630,18 +3990,21 @@
                             "Publishers": {
                                 "sensor_msgs::msg::PointCloud2": {
                                     "Type": "sensor_msgs::msg::PointCloud2",
-                                    "Topic": "pc"
+                                    "Topic": "pc_vlp16"
                                 }
                             }
                         },
+                        "lidarModel": 4,
+                        "lidarImplementation": "RobotecGPULidar",
                         "LidarParameters": {
+                            "Name": "Velodyne Puck (VLP-16)",
                             "Layers": 16,
-                            "Points per layer": 308,
-                            "Min horizontal angle": -120.0,
-                            "Max horizontal angle": 120.0,
-                            "Min vertical angle": 12.0,
-                            "Max vertical angle": -12.0,
-                            "Max range": 50.0
+                            "Points per layer": 1800,
+                            "Min vertical angle": 15.0,
+                            "Max vertical angle": -15.0,
+                            "Noise Parameters": {
+                                "Distance noise standard deviation base": 0.029999999329447746
+                            }
                         },
                         "IgnoreLayer": true,
                         "IgnoredLayerIndex": 1
@@ -3659,6 +4022,68 @@
                     "$type": "EditorOnlyEntityComponent",
                     "Id": 14110476541514862518
                 },
+                "Component_[15860519599582886808]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 15860519599582886808,
+                    "m_template": {
+                        "$type": "ROS2LidarSensorComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "sensor_msgs::msg::PointCloud2": {
+                                    "Type": "sensor_msgs::msg::PointCloud2",
+                                    "Topic": "pc_os0_64"
+                                }
+                            }
+                        },
+                        "lidarModel": 1,
+                        "lidarImplementation": "RobotecGPULidar",
+                        "LidarParameters": {
+                            "Name": "Ouster OS0-64",
+                            "Layers": 64,
+                            "Points per layer": 2048,
+                            "Min vertical angle": -45.0,
+                            "Max vertical angle": 45.0,
+                            "Max range": 47.5,
+                            "Noise Parameters": {
+                                "Distance noise standard deviation base": 0.0,
+                                "Distance noise standard deviation slope": 0.0020000000949949026
+                            }
+                        },
+                        "IgnoreLayer": true,
+                        "IgnoredLayerIndex": 1
+                    }
+                },
+                "Component_[16890183046165133273]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 16890183046165133273,
+                    "m_template": {
+                        "$type": "ROS2LidarSensorComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "sensor_msgs::msg::PointCloud2": {
+                                    "Type": "sensor_msgs::msg::PointCloud2",
+                                    "Topic": "pc_os1_64"
+                                }
+                            }
+                        },
+                        "lidarModel": 2,
+                        "lidarImplementation": "RobotecGPULidar",
+                        "LidarParameters": {
+                            "Name": "Ouster OS1-64",
+                            "Layers": 64,
+                            "Points per layer": 2048,
+                            "Min vertical angle": 22.5,
+                            "Max vertical angle": -22.5,
+                            "Max range": 120.0,
+                            "Noise Parameters": {
+                                "Distance noise standard deviation base": 0.0020000000949949026,
+                                "Distance noise standard deviation slope": 0.0007999999797903001
+                            }
+                        },
+                        "IgnoreLayer": true,
+                        "IgnoredLayerIndex": 1
+                    }
+                },
                 "Component_[17124975368240161289]": {
                     "$type": "EditorVisibilityComponent",
                     "Id": 17124975368240161289
@@ -3674,6 +4099,65 @@
                 "Component_[7054215981025466544]": {
                     "$type": "EditorEntitySortComponent",
                     "Id": 7054215981025466544
+                },
+                "Component_[8686155220367903850]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 8686155220367903850,
+                    "m_template": {
+                        "$type": "ROS2LidarSensorComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "sensor_msgs::msg::PointCloud2": {
+                                    "Type": "sensor_msgs::msg::PointCloud2",
+                                    "Topic": "pc_hdl32"
+                                }
+                            }
+                        },
+                        "lidarModel": 5,
+                        "lidarImplementation": "RobotecGPULidar",
+                        "LidarParameters": {
+                            "Name": "Velodyne HDL-32E",
+                            "Layers": 32,
+                            "Points per layer": 1800,
+                            "Min vertical angle": 10.670000076293945,
+                            "Max vertical angle": -30.670000076293945,
+                            "Noise Parameters": {
+                                "Distance noise standard deviation base": 0.019999999552965164
+                            }
+                        },
+                        "IgnoreLayer": true,
+                        "IgnoredLayerIndex": 1
+                    }
+                },
+                "Component_[8812332447353373072]": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 8812332447353373072,
+                    "m_template": {
+                        "$type": "ROS2LidarSensorComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "sensor_msgs::msg::PointCloud2": {
+                                    "Type": "sensor_msgs::msg::PointCloud2",
+                                    "Topic": "pc_os2_64"
+                                }
+                            }
+                        },
+                        "lidarModel": 3,
+                        "lidarImplementation": "RobotecGPULidar",
+                        "LidarParameters": {
+                            "Name": "Ouster OS1-64",
+                            "Layers": 64,
+                            "Points per layer": 2048,
+                            "Min vertical angle": 11.25,
+                            "Max vertical angle": -11.25,
+                            "Max range": 225.0,
+                            "Noise Parameters": {
+                                "Distance noise standard deviation base": 0.006000000052154064
+                            }
+                        },
+                        "IgnoreLayer": true,
+                        "IgnoredLayerIndex": 1
+                    }
                 },
                 "Component_[8854312938977545065]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
@@ -3782,13 +4266,217 @@
                 }
             }
         },
+        "Entity_[4533389452501]": {
+            "Id": "Entity_[4533389452501]",
+            "Name": "Apple_Crate_empty",
+            "Components": {
+                "Component_[13219244507659109505]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 13219244507659109505,
+                    "Child Entity Order": [
+                        "Entity_[4537684419797]"
+                    ]
+                },
+                "Component_[14744176274437433019]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14744176274437433019,
+                    "Parent Entity": "Entity_[126373983206044]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.15843963623046875,
+                            0.0,
+                            0.6364374160766602
+                        ],
+                        "Rotate": [
+                            0.0,
+                            0.0,
+                            -90.0
+                        ]
+                    }
+                },
+                "Component_[15997853056622150220]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 15997853056622150220
+                },
+                "Component_[16260322733702707360]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16260322733702707360
+                },
+                "Component_[16370124873718181668]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 16370124873718181668
+                },
+                "Component_[275298596182513649]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 275298596182513649
+                },
+                "Component_[3742981526396069698]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 3742981526396069698
+                },
+                "Component_[5052183535419524745]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 5052183535419524745
+                },
+                "Component_[9499472053985704658]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 9499472053985704658
+                }
+            }
+        },
+        "Entity_[4537684419797]": {
+            "Id": "Entity_[4537684419797]",
+            "Name": "Apple_Crate",
+            "Components": {
+                "Component_[11032823860518593082]": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 11032823860518593082
+                },
+                "Component_[14063829758759983448]": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 14063829758759983448,
+                    "Parent Entity": "Entity_[4533389452501]",
+                    "IsStatic": true
+                },
+                "Component_[16325347661556016829]": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 16325347661556016829,
+                    "DisabledComponents": [
+                        {
+                            "$type": "EditorColliderComponent",
+                            "Id": 6131507114438886105,
+                            "ColliderConfiguration": {
+                                "MaterialSlots": {
+                                    "Slots": [
+                                        {
+                                            "Name": "DefaultMaterial"
+                                        }
+                                    ]
+                                }
+                            },
+                            "ShapeConfiguration": {
+                                "PhysicsAsset": {
+                                    "Asset": {
+                                        "assetId": {
+                                            "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                            "subId": 1435810015
+                                        },
+                                        "assetHint": "assets/apple_crate/apple_crate.pxmesh"
+                                    },
+                                    "Configuration": {
+                                        "PhysicsAsset": {
+                                            "assetId": {
+                                                "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                                "subId": 1435810015
+                                            },
+                                            "loadBehavior": "QueueLoad",
+                                            "assetHint": "assets/apple_crate/apple_crate.pxmesh"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Component_[16860679445705058947]": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 16860679445705058947
+                },
+                "Component_[1699735674964201617]": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 1699735674964201617
+                },
+                "Component_[17515991116920437105]": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 17515991116920437105
+                },
+                "Component_[6965830782696864825]": {
+                    "$type": "EditorLockComponent",
+                    "Id": 6965830782696864825
+                },
+                "Component_[8205517628188817334]": {
+                    "$type": "EditorMaterialComponent",
+                    "Id": 8205517628188817334,
+                    "Controller": {
+                        "Configuration": {
+                            "materials": [
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 1574106304
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{2547663B-752C-5C7A-BF44-7288D95A7B21}"
+                                            },
+                                            "assetHint": "assets/apple_crate/apple_crate_cratemat.azmaterial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "Component_[8819040866776028521]": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 8819040866776028521,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{4B118B91-95F2-51D3-89FF-B3295ACF5544}",
+                                    "subId": 270483317
+                                },
+                                "assetHint": "assets/apple_crate/apple_crate.azmodel"
+                            },
+                            "IsRayTracingEnabled": false
+                        }
+                    }
+                },
+                "Component_[9008534885754287450]": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 9008534885754287450,
+                    "ComponentOrderEntryArray": [
+                        {
+                            "ComponentId": 14063829758759983448
+                        },
+                        {
+                            "ComponentId": 8819040866776028521,
+                            "SortIndex": 1
+                        },
+                        {
+                            "ComponentId": 8205517628188817334,
+                            "SortIndex": 2
+                        },
+                        {
+                            "ComponentId": 6131507114438886105,
+                            "SortIndex": 3
+                        }
+                    ]
+                },
+                "Component_[9070077239474304225]": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 9070077239474304225
+                }
+            }
+        },
         "Entity_[453802196716717]": {
             "Id": "Entity_[453802196716717]",
             "Name": "camera",
             "Components": {
                 "Component_[10024056911688572127]": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 10024056911688572127
+                    "Id": 10024056911688572127,
+                    "DisabledComponents": [
+                        {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 2426430931063954294,
+                            "m_template": {
+                                "$type": "FollowingCameraComponent",
+                                "Target": "Entity_[126373983206044]"
+                            }
+                        }
+                    ]
                 },
                 "Component_[10784749401815499991]": {
                     "$type": "EditorTagComponent",
@@ -3802,7 +4490,7 @@
                     "Id": 12122484710959107959,
                     "Controller": {
                         "Configuration": {
-                            "EditorEntityId": 3983586778043080688
+                            "EditorEntityId": 18263052624202686583
                         }
                     }
                 },
@@ -3817,16 +4505,16 @@
                 "Component_[15610120393058518460]": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 15610120393058518460,
-                    "Parent Entity": "ContainerEntity",
+                    "Parent Entity": "Entity_[126373983206044]",
                     "Transform Data": {
                         "Translate": [
                             -2.0,
-                            0.0,
-                            3.0
+                            -1.1920928955078125e-7,
+                            3.000000238418579
                         ],
                         "Rotate": [
-                            0.0,
-                            20.000001907348633,
+                            -9.085668466468633e-7,
+                            20.000003814697266,
                             -90.00000762939453
                         ]
                     }
@@ -3849,14 +4537,6 @@
                 "Component_[17766027344918997686]": {
                     "$type": "EditorInspectorComponent",
                     "Id": 17766027344918997686
-                },
-                "Component_[2426430931063954294]": {
-                    "$type": "GenericComponentWrapper",
-                    "Id": 2426430931063954294,
-                    "m_template": {
-                        "$type": "FollowingCameraComponent",
-                        "Target": "Entity_[126373983206044]"
-                    }
                 },
                 "Component_[4338215858930337320]": {
                     "$type": "EditorLockComponent",
@@ -4386,93 +5066,6 @@
                     "Id": 9234471473511081064
                 }
             }
-        }
-    },
-    "Instances": {
-        "Instance_[15809790840954]": {
-            "Source": "Prefabs/Apple_Crate_empty.prefab",
-            "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Parent Entity",
-                    "value": "../Entity_[126373983206044]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Translate/0",
-                    "value": 0.5687007904052734
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Translate/1",
-                    "value": 0.000003814697265625
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Translate/2",
-                    "value": 0.6364383697509766
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Rotate/2",
-                    "value": 90.00000762939453
-                }
-            ]
-        },
-        "Instance_[16591474888826]": {
-            "Source": "Prefabs/Apple_Crate_empty.prefab",
-            "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Parent Entity",
-                    "value": "../Entity_[126373983206044]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Translate/0",
-                    "value": 0.15843963623046875
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Translate/2",
-                    "value": 0.6364374160766602
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[14744176274437433019]/Transform Data/Rotate/2",
-                    "value": -90.0
-                }
-            ]
-        },
-        "Instance_[16621539659898]": {
-            "Source": "Prefabs/Apple_Crate.prefab",
-            "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[15224001494745498459]/Parent Entity",
-                    "value": "../Entity_[126373983206044]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[15224001494745498459]/Transform Data/Translate/0",
-                    "value": -0.2532958984375
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[15224001494745498459]/Transform Data/Translate/1",
-                    "value": 0.000003814697265625
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[15224001494745498459]/Transform Data/Translate/2",
-                    "value": 0.635009765625
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/Component_[15224001494745498459]/Transform Data/Rotate/2",
-                    "value": 90.00000762939453
-                }
-            ]
         }
     }
 }
